@@ -1,0 +1,116 @@
+/*
+Name: Yupeng Wang
+Date: 4/23/2018
+Section: CSE 154 AE
+
+This is the updated index.css file that creats styles for tags used in index.html
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Rammetto+One');
+#headerquote {
+  border-left: solid 5px #cccaca;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: cursive;
+  font-style: italic;
+}
+
+#main {
+  margin: auto;
+  width: 90%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: white;
+}
+
+#introduction, #example, #invitation, #teemostory {
+  display: flex;
+  border-style: dashed;
+  border-color: grey;
+  border-width: thin;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+}
+
+#introduction>h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22pt;
+}
+
+#introduction>p {
+  width: 90%;
+}
+
+
+#teemoPicture, #aatroxPicture {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+}
+
+
+img {
+  max-height: 600px;
+  max-width: 500px;
+  width: 30vw;
+}
+
+#teemostory {
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(Teemo_4.jpg);
+}
+
+#teemostory > header {
+  text-align: center;
+}
+
+#teemostory > main {
+  width: 70%;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+.paragraph {
+  font-size: 12pt;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+span.basicability, span.ultraability {
+  color: orange;
+  font-weight: bold;
+}
+
+span.ultraability {
+  color: red;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Rammetto One";
+}
+
+h3 {
+  text-align: left;
+  font-size: 20pt;
+}
+
+hr {
+  width: 100%;
+  height: 2px;
+  background: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
