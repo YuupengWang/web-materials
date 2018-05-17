@@ -1,19 +1,133 @@
 <!DOCTYPE html> <!-- HTML header that specifies that we want to use HTML -->
 <html lang="en"> <!-- Specify primary language for the page -->
 <head>
+  <link type="text/css" href="../base-css/exercise.css" rel="stylesheet">
 	<!-- Set a page title in here! -->
-
+  <title>Intro of LOL</title>
 </head>
 <body>
-	<!-- Add a top level header -->
+  <div id="main">
+    <header>
+      <h1>Welcome to League of Legends</h1>
+      <hr>
+      <blockquote id="headerquote">
+        "Cut the courage from them." <br>----<button id="button">Aatrox</button>
+      </blockquote>
+    </header>
 
-	<!-- Add an image here! https://www.sololearn.com/Icons/Courses/1014.png will do -->
+    <div id="introduction">
+      <h2>What is League of legends?</h2>
+      <p class="paragraph"><strong>League of Legends</strong> is a fast-paced,
+        competitive online game that blends the speed and intensity of an RTS
+        with <br>RPG elements. Two teams of powerful champions, each with a
+        unique design and playstyle, battle head-to-head <br>across
+        multiple battlefields and game modes. With an ever-expanding roster of
+        champions, frequent updates and <br>a thriving tournament scene, League
+        of Legends offers endless replayability for players of every skill level.</p>
+    </div>
 
-	<!-- Add a second level header -->
-	<!-- Add some formatted text! You can use <b> or <i> -->
+    <div id="example">
+      <h3>Lets see a example champion</h3>
+      <article>
+        <fieldset>
+          <input type="radio" name="chooseCham" id="teemoo" checked>Teemo
+          <input type="radio" name="chooseCham" id="aatroxx">Aatrox
+        </fieldset>
+        <div id="teemo">
+          <div id="teemoPicture">
+            <img  src="https://vignette.wikia.nocookie.net/leagueoflegends/images/3/3b/Teemo_OriginalSkin.jpg/revision/latest?cb=20170615230642"
+            alt="Image of teemo">
+          </div>
+          <ul>
+            <li>This is <span id="notAatrox">Teemo</span>, a cute enchanter in
+              League of Legends the following list shows his abilities</li>
+            <li><span class="basicability">Guerrilla Warfare (Passive)</span>: If
+              Teemo stands still and takes no actions for a short duration, he
+              becomes Invisible indefinitely. If he's in brush, Teemo can enter
+              and maintain his Invisibility while moving.
+              After leaving Invisibility, Teemo gains the Element of Surprise,
+              increasing his Attack Speed for 3 seconds.</li>
+            <li><span class="basicability">Blinding Dart (Q)</span>: Deals 80/
+              125/170/215/260 (+0.8) magic damage and blinds the target for 1.5/
+              1.75/2/2.25/2.5 seconds.</li>
+            <li><span class="basicability">Move Quick (W)</span>: Passive: Teemo's
+              Movement Speed is increased by 10/14/18/22/26% unless he has been
+              damaged by an enemy champion or turret in the last 5 seconds.Active:
+              Teemo sprints, gaining twice his normal
+              bonus for 3 seconds. This bonus is not lost when struck.</li>
+            <li><span class="basicability">Toxic Shot (E)</span>: Teemo's basic
+              attacks poison their target, dealing 10/20/30/40/50 (+0.3) magical
+              damage upon impact and 6/12/18/24/30 (+0.1) magical damage each
+              second for 4 seconds.</li>
+            <li><span class="ultraability">Noxious Trap (R)</span>: Tosses a
+              stored mushroom as a trap that detonates if an enemy steps on it,
+              spreading poison to nearby enemies that slows Movement Speed by
+              30/40/50%, reveals them and deals 200/325/450 (+0.5)
+              magic damage over 4 seconds. Traps last 5 minutes and take 1 second
+              to arm and stealth. If a thrown trap lands on another trap, it will
+              bounce up to 3/4/5 Teemos further before planting.Teemo forages for
+              a mushroom every f 1 seconds, but he
+              is only big enough to carry 3 at once.</li>
+              <li>Click <a href="teemo.html"><span class="teemo">here</span></a> for
+                more Teemo's background</li>
+          </ul>
+        </div>
 
-	<!-- Add a second level header -->
-	<!-- Add some formatted text! You can use <b> or <i> -->
+        <div class="hidden" id="aatrox">
+          <div id="aatroxPicture">
+            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg" alt="image of aatrox">
+          </div>
+          <ul>
+            <li>This is Aatrox, a cool killer in League of Legends the following
+              list shows his abilities</li>
+            <li><span class="basicability">Blood Well(Passive)</span>:Aatrox
+              fills up his Blood Well through his abilities. When filled, Aatrox
+              becomes Hellbent for as long as he stays in combat with champions
+              or monsters, granting him attack damage, attack speed, and the
+              ability to survive fatal damage.</li>
+            <li><span class="basicability">Blinding Dart (Q)</span>: Deals 80/
+              125/170/215/260 (+0.8) magic damage and blinds the target for 1.5/
+              1.75/2/2.25/2.5 seconds.</li>
+            <li><span class="basicability">Dark Flight (Q)</span>: Aatrox takes
+              flight and slams down at a targeted location, dealing damage and
+              knocking up enemies at the center of impact. Aatrox takes flight
+              and slams down at target location, dealing 20/50/80/110/140 (+110%
+              Attack Damage) physical damage and knocking up enemies at the
+              center of impact for 1 second.Aatrox fills up 20% of the Blood
+              Well upon cast.</li>
+            <li><span class="basicability">Blood Thirst / Blood Price (w)</span>:
+               While toggled on Aatrox deals bonus damage and fills a portion of
+               his Blood Well every third subsequent attack. While toggled off
+               Aatrox restores Health every third subsequent attack. Toggle Off:
+               <br>Blood Thirst:Every third attack, Aatrox restores 30/45/60/75
+               /90 (+[{{ f1*100 }}]% Missing Health) Health.Toggle On: <br>Blood
+               Price: Every third attack, Aatrox deals 50/85/120/155/190 (+75%
+               bonus Attack Damage) bonus physical damage and fills up 20% of
+               the Blood Well..</li>
+            <li><span class="basicability">Blades of Torment (E)</span>: Aatrox
+               unleashes the power of his blade, dealing damage to enemies hit
+               and slowing them. Aatrox unleashes the power of his blade,
+               dealing 80/120/160/200/240 (+70% bonus Attack Damage) physical
+               damage to enemies hit and slowing them by 30/35/40/45/50% for 2
+               seconds.Aatrox fills up 20% of the Blood Well upon cast.</li>
+            <li><span class="ultraability">Massacre(R) </span>: Aatrox draws in
+              the blood of his foes, damaging all nearby enemy champions around
+              him and gaining increased Attack Speed and bonus Attack Range for
+              a short duration. Aatrox draws in the blood of his foes, dealing
+              200/300/400 (+100% Ability Power) magic damage to nearby enemy
+              champions, filling up 20% of the Blood Well for each hit.Aatrox
+              gains 40/50/60% Attack Speed and 225 attack range for 12 seconds
+              upon cast.
+          </ul>
+        </div>
+      </article>
+    </div>
 
+    <div id="invitation">
+      <h3>Want to play this champion? </h3>
+      <p class="paragraph">Let's get start and play <a href="https://na.leagueoflegends.com/en/">Welcome
+        to the league world</a></p>
+    </div>
+  </div>
 </body>
 </html>
